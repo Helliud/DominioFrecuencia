@@ -203,8 +203,10 @@ namespace GraficadorSeñales
                     {
                         break;
                     }
-
+                   
                 }
+                double frecuenciaFundamnetal = ((double)indiceMaximo * señal.FrecuenciaMuestreo) / (double)transformada.Muestras.Count;
+                lblFreuencuaFundamental.Text = frecuenciaFundamnetal.ToString() + "Hz";
 
             }
 
